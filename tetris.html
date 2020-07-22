@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>tetris</title>
+        <style>
+            .tetris{
+                margin: 550px;
+                width: 260px;
+                color: white;
+                background-color: black;
+                display: grid;
+                grid-template-columns: repeat(12, 23px);
+                grid-template-rows: repeat(22, 23px);
+            }
+            .box{
+            }
+            #grayed{
+                background-color: gray;
+                box-shadow: inset -1px -1px 3px black;
+            }
+            #purpled{
+                background-color: #AB10A5;
+                box-shadow: inset -1px -1px 3px black;
+            }
+            #reded{
+                background-color: red;
+                box-shadow: inset -1px -2px 3px black;
+            }
+            #blued{
+                background-color: #6CEFF6;
+                box-shadow: inset -1px -2px 3px black;
+            }
+            #yellowed{
+                background-color: yellow;
+                box-shadow: inset -1px -2px 3px black;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="tetris">
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+
+
+            <div class="box" id="grayed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="grayed"></div>
+
+            <div class="box" id="grayed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="grayed"></div>
+
+            <div class="box" id="grayed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="grayed"></div>
+
+            <div class="box" id="grayed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="grayed"></div>
+
+            <div class="box" id="grayed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="grayed"></div>
+
+            <div class="box" id="grayed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="purpled"></div>
+            <div class="box" id="purpled"></div>
+            <div class="box" id="purpled"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="grayed"></div>
+
+            <div class="box" id="grayed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="purpled"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="grayed"></div>
+
+            <div class="box" id="grayed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="grayed"></div>
+
+            <div class="box" id="grayed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="grayed"></div>
+
+            <div class="box" id="grayed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="grayed"></div>
+
+            <div class="box" id="grayed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="grayed"></div>
+
+            <div class="box" id="grayed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="grayed"></div>
+
+            <div class="box" id="grayed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="grayed"></div>
+
+            <div class="box" id="grayed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="grayed"></div>
+
+            <div class="box" id="grayed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="grayed"></div>
+
+            <div class="box" id="grayed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="purpled"></div>
+            <div class="box" id="grayed"></div>
+
+            <div class="box" id="grayed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="reded"></div>
+            <div class="box" id="yellowed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="purpled"></div>
+            <div class="box" id="purpled"></div>
+            <div class="box" id="grayed"></div>
+
+            <div class="box" id="grayed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="purpled"></div>
+            <div class="box" id="reded"></div>
+            <div class="box" id="yellowed"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box" id="purpled"></div>
+            <div class="box" id="purpled"></div>
+            <div class="box" id="grayed"></div>
+
+            <div class="box" id="grayed"></div>
+            <div class="box" id="purpled"></div>
+            <div class="box"></div>
+            <div class="box" id="purpled"></div>
+            <div class="box" id="purpled"></div>
+            <div class="box" id="reded"></div>
+            <div class="box" id="yellowed"></div>
+            <div class="box" id="yellowed"></div>
+            <div class="box" id="reded"></div>
+            <div class="box" id="purpled"></div>
+            <div class="box" id="purpled"></div>
+            <div class="box" id="grayed"></div>
+
+            <div class="box" id="grayed"></div>
+            <div class="box" id="reded"></div>
+            <div class="box" id="blued"></div>
+            <div class="box" id="purpled"></div>
+            <div class="box" id="yellowed"></div>
+            <div class="box"></div>
+            <div class="box" id="blued"></div>
+            <div class="box" id="purpled"></div>
+            <div class="box" id="purpled"></div>
+            <div class="box" id="purpled"></div>
+            <div class="box" id="purpled"></div>
+            <div class="box" id="grayed"></div>
+
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+            <div class="box" id="grayed"></div>
+        </div>
+    </body>
+</html>
